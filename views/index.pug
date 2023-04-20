@@ -1,0 +1,42 @@
+doctype html
+head
+  title Copisteria Julian
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+  link(rel="stylesheet", src="/stylesheets/style.css")
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+  style.
+    .tinta {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+    }
+    #impresoras {
+       width: 100%;
+        padding-left: 200px;
+    }
+.container
+  //
+    <div class="jumbotron">
+    <h1>Copisteria Julian</h1>
+    <p>Usa la impresora que mejor te vaya!</p>
+    </div>
+  .row
+  h3
+    | Hoja: 
+    span#spanContador 0
+  p Introduce la impresora y el texto a imprimir
+  form.form-inline#formulario(action='index.php' method='get' role='form')
+    | Impresora: 
+    select.form-control(name='n_impresora', id='impresoraSelect')
+      option(value='1') Impresora1
+      option(value='2') Impresora2
+      option(value='3') Impresora3
+  textarea.form-control#hoja(rows='4' name='texto')
+  button#btn(type='button') Imprimir
+#impresoras
+ 
+    script(src='/javascripts/data-impresora.js')
