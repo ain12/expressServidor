@@ -32,10 +32,18 @@ const getImpresoras = async () => {
       </div>
       <div class="row">
         <div class="toner">
-          <div class="tinta" style="background-color:black">${impresora.negro}%</div>
-          <div class="tinta" style="background-color:yellow">${impresora.amarillo}%</div>
-          <div class="tinta" style="background-color:cyan">${impresora.cian}%</div>
-          <div class="tinta" style="background-color:magenta">${impresora.magenta}%</div>
+          <div class="tinta" style="background-color:black">${impresora.negro.toFixed(
+            2
+          )}%</div>
+          <div class="tinta" style="background-color:yellow">${impresora.amarillo.toFixed(
+            2
+          )}%</div>
+          <div class="tinta" style="background-color:cyan">${impresora.cian.toFixed(
+            2
+          )}%</div>
+          <div class="tinta" style="background-color:magenta">${impresora.magenta.toFixed(
+            2
+          )}%</div>
         </div>
       </div>
       <div class="row">
