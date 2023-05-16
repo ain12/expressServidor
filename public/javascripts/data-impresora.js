@@ -4,7 +4,7 @@ const btn = document.getElementById("btn");
 const impresoras = document.getElementById("impresoras");
 let spanContador = document.getElementById("spanContador");
 let counter = 1;
-
+//Obtener impresoras
 const getImpresoras = async () => {
   impresoras.innerHTML = "";
   const res = await fetch("/impresora", {
@@ -74,7 +74,7 @@ btn.addEventListener("click", (e) => {
       .join("");
   }
 });
-
+//Imprimir cola
 const imprimirCola = async (id) => {
   const impcola = document.getElementById(`impresora-${id}`);
   const res = await fetch(`/impresora/${id}`, {

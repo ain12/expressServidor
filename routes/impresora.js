@@ -16,7 +16,7 @@ router.get("/:id", (req, res) => {
     res.json(result);
   });
 });
-
+// router.post("/", (req, res)
 router.put("/:id", (req, res) => {
   const { id } = req.params;
   const { negro, cian, amarillo, magenta } = req.body[0];
